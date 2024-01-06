@@ -218,7 +218,7 @@ def get_fbp_labels():
 
 filepath = r'C:\Users\WillChan\Downloads\up1223\segvit_vit-l_jax_2048x2048_80k_fbp_sp_1275_nosp.py\best_mIoU_iter_36000.pth_conb'
 newpath = r'C:\Users\WillChan\Downloads\up1223\segvit_vit-l_jax_2048x2048_80k_fbp_sp_1275_nosp.py\best_mIoU_iter_36000.pth_conb_col'
-
+os.makedirs(newpath, exist_ok=True)
 pathDir = recursive_glob(filepath, '.png')
 i = 0
 for filename in pathDir:
